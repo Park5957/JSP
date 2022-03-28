@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<!-- 회원가입 페이지 만들기 -->
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+        body{
+            background-color: #d2b48c;
+            margin-left: 20%;
+            margin-right: 20%;
+            border: 2px dotted black;
+            padding : 10px 10px 10px 10px;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+<form> 
+회원 가입 페이지
+<br><br>
+이름<input type="text" name="Name" placeholder="Enter name" required>
+<br>
+생년월일<input type="number" name="bb" min="1" max="12" value="1">,
+<input type="number" name="bb" min="1" max="31" value="1">
+<br>
+나이<input type="number" name="age" min="1" max="120" value="0">
+<br>
+성별<br>
+Man <input type="checkbox" name="gender" value="man"> 
+Woman<input type="checkbox" name="gender" value="Woman">
+<br>
+번호	<select name="pon">
+	<option value="010">010</option>
+	<option value="011">011</option>
+	<option value="017">017</option>
+	<option value="019">019</option>
+	</select>
+<input type="text" name="pon" placeholder="000-000" required>
+<br>
+주소<select name="add">
+	<option value="서울">서울</option>
+	<option value="경기도">경기도</option>
+	<option value="강원도">강원도</option>
+	<option value="충청도">충청도</option>
+	<option value="경상도">경상도</option>
+	<option value="전라도">전라도</option>
+	</select>
+	상세주소
+	<input type="text" name="add1" required>
+<br>
+자기소개
+<br>
+<textarea name="commer" rows="10" cols="50"></textarea>
+
+<br>
+	<input type = "reset">
+	<br>
+	<input type = "button" value="제출">
+	</form> 
+
+
+
+</body>
+</html>
