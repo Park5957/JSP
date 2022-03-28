@@ -6,12 +6,15 @@
 <title>Insert title here</title>
 <style type="text/css">
         body{
-            background-color: #d2b48c;
-            margin-left: 20%;
-            margin-right: 20%;
+        	width : 800px;
+            background-color: #996633;
             border: 2px dotted black;
-            padding : 10px 10px 10px 10px;
             font-family: sans-serif;
+            padding-top : 5px;
+			padding-bottom : 5px;
+            margin-reft: auto;
+			margin-rgth: auto;
+			
         }
     </style>
 </head>
@@ -19,15 +22,14 @@
 <form> 
 회원 가입 페이지
 <br><br>
-이름<input type="text" name="Name" placeholder="Enter name" required>
+이름	<input type="text" name="Name" placeholder="Enter name" required>
 <br>
-생년월일<input type="number" name="bb" min="1" max="12" value="1">,
+생년월일	<input type="number" name="bb" min="1" max="12" value="1"> :
 <input type="number" name="bb" min="1" max="31" value="1">
 <br>
-나이<input type="number" name="age" min="1" max="120" value="0">
+나이	<input type="number" name="age" min="1" max="120" value="0">
 <br>
-성별<br>
-Man <input type="checkbox" name="gender" value="man"> 
+성별	Man <input type="checkbox" name="gender" value="man"> 
 Woman<input type="checkbox" name="gender" value="Woman">
 <br>
 번호	<select name="pon">
@@ -38,7 +40,7 @@ Woman<input type="checkbox" name="gender" value="Woman">
 	</select>
 <input type="text" name="pon" placeholder="000-000" required>
 <br>
-주소<select name="add">
+주소	<select name="add">
 	<option value="서울">서울</option>
 	<option value="경기도">경기도</option>
 	<option value="강원도">강원도</option>
@@ -46,6 +48,7 @@ Woman<input type="checkbox" name="gender" value="Woman">
 	<option value="경상도">경상도</option>
 	<option value="전라도">전라도</option>
 	</select>
+	
 	상세주소
 	<input type="text" name="add1" required>
 <br>
