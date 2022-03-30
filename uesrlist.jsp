@@ -1,7 +1,7 @@
 <%@page import="com.mysql.cj.x.protobuf.MysqlxSql.StmtExecute"%>
 <%@page import="com.mysql.cj.protocol.Resultset"%>
 <%@page import="java.beans.Statement"%>
-<%@page import="java.sql.DriverManager"%>
+<%@page import="java.sql.*"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 
