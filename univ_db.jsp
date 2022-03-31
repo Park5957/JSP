@@ -25,15 +25,27 @@
 
 	try {
 		Class.forName("com.mysql.jdbc.Driver");
-		out.print("JDBC Driver loading 성공!!<br>");
+		out.print("JDBC Driver loading 성공!! by 18.박현용<br>");
 		
 	} catch (ClassNotFoundException err) {
 		out.print("JDBC Driver loading 실패!!<br>");
 	}
 
+	
+	
+	PreparedStatement pstmt = null; //구문객체
+	
 	try{
 		conn = DriverManager.getConnection(url,id,pw);
-		out.print("SQL DB 연결성공<br>");
+		out.print("SQL DB 연결성공<br> by 18.박현용");
+		
+		String sql = "CREATE DATABASE univ"; // DB 생성 SQL 구문
+		
+		pstmt = conn.prepareStatement(sql); // 구문을 객체에 넣어서
+		
+		pstmt.executeUpdate(); // 구문객체 실행
+		
+		out.print("univ 데이터데이스 생성성공");
 		 
 	}catch(SQLException sqlerr){
 		out.print("SQL DB 연결실패<br>");
